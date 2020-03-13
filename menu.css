@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+
+html{
+    background-color: rgb(218, 214, 214);
+}
 
 header{
     padding: 0px; 
@@ -7,6 +14,7 @@ header{
     top: 0;
     width: 100%;
     height: 165px;
+    z-index: 10;
 }
 
 header h1{
@@ -21,14 +29,55 @@ header p{
     transform: translateY(-30px);
 }
 
+p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
 /* Images */
 img#com{
     transform: translateX(-100px);
 }
 
+h1#ah{
+    border: #DFB558 solid 2px;
+    border-radius: 20px;
+    font-size: 40px;
+    background-color: #B32322;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 5px;
+}
 
 
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 25px;
+}
+
+
+
+
+
+/*Pictures*/
+
+img{
+    border-radius: 30px;
+    border: gray solid 2px;
+}
+
+#rolls{
+    transform: translateY(-1965px);
+    margin-left: 970px;
+}
+
+#salmon{
+    transform: translateY(-1865px);
+}
+#sushi{
+    transform: translateY(-1968px);
+    margin-left: 540px;
+}
 
 
 
@@ -51,6 +100,7 @@ ul {
     overflow: hidden;
     transform: translateY(-30px);
     box-shadow: #212121 0px 4px 10px;
+
    
 }
   
@@ -75,10 +125,19 @@ li a:hover:not(.active) {
 
 div{
     padding:1px 16px;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
+    margin-top: 100px;
 }
-
+.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+div[class^="col-"]{
+    float: left;
+}
+.col-1-3{width: 33%}
 footer{
     border: gray solid 1px;
     background-color: gray;
